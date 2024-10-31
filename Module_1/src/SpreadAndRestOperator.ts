@@ -28,8 +28,8 @@
         ...mertors2
     }
     
-    const greetFriends = (friend1:string,friend2: string,friend3:string) => {
-        console.log(`Hi ${friend1} ${friend2} ${friend3}`);
+    const greetFriends = (...friend:string[]) => {
+       friend.forEach(fri => console.log(fri))
     }
 
     greetFriends("Rimon","Shouvo","Niloy")
