@@ -29,9 +29,11 @@ const student1 : Student = {
 console.log(student);
 console.log(student1);
 
-// function type alies
+// function type alias
 
+    type Add = (num1 : number,num2 :number) => number
 
+    const add : Add = (num1,num2) => num1 + num2
 
 
 }
