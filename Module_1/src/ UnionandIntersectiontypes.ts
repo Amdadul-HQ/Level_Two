@@ -2,6 +2,12 @@
 
     // UnionanIntersectiontypes
     type FrontEndDeveloper = "React.js" | "Anguler.js"
+    type FullStackDeveloper = "AWS" | "DevOps"
+
+    type Developer = FrontEndDeveloper | FullStackDeveloper;
+
+    const fullStack :Developer = "AWS"
+    
 
     const newDeveloper :FrontEndDeveloper = "Anguler.js" 
 
