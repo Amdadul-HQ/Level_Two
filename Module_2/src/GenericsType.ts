@@ -19,24 +19,24 @@
         role?:string
     }
 
-    const users : GenericType<User> = [
-        {
-            name: "Amdadul",
-            age:20
-        },
-        {
-            name: "Amdadul",
-            age:20
-        },
-        {
-            name: "Amdadul",
-            age:20
-        },
-        {
-            name: "Amdadul",
-            age:20
-        }
-    ]
+    // const users : GenericType<User> = [
+    //     {
+    //         name: "Amdadul",
+    //         age:20
+    //     },
+    //     {
+    //         name: "Amdadul",
+    //         age:20
+    //     },
+    //     {
+    //         name: "Amdadul",
+    //         age:20
+    //     },
+    //     {
+    //         name: "Amdadul",
+    //         age:20
+    //     }
+    // ]
 
     // Generic Tuple
     type GenericTuple<X,Y> = [X,Y]
@@ -46,7 +46,13 @@
     }  
     const userWithId : GenericTuple<number,Object> = [123,{name:"Amdadul",id:123}]
 
-    
+    interface GenericTuple1<T> {
+        [index: number] : T 
+    }
+
+    const users : GenericTuple1<string> = ["Rimon","Rifat","Shakil"]
+
+
 
 
 
