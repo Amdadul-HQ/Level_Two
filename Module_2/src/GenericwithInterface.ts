@@ -1,9 +1,9 @@
 {
 // Generics Type with InterFace
 
-    // type FrontEndDeveloper = "HTML" & "CSS" & "React.js" & "JavaScript" & "TailwindCss"
-    // type BackEndDeveloper = "Node.js" & "Express" & "mongoos" & "mongoDB"
-    // type FullStackDeveloper = FrontEndDeveloper & BackEndDeveloper  & "AWS" & "Deploy"
+    type FrontEndDeveloper = ["HTML" & "CSS" & "React.js" & "JavaScript" & "TailwindCss"]
+    type BackEndDeveloper = "Node.js" & "Express" & "mongoos" & "mongoDB"
+    type FullStackDeveloper = FrontEndDeveloper & BackEndDeveloper  & "AWS" & "Deploy"
 
     interface R15{
         name: "R15",
@@ -23,7 +23,7 @@
 
     interface Developer<T,B = null> {
         name:string;
-        skills: Array<string>
+        skills: FrontEndDeveloper,
         computer:{
             name: "HP" | "LG" | "ASSUS" | "MAC",
             model: string,
@@ -35,7 +35,7 @@
 
     const PoorDeveloper : Developer<KomDamiGori> ={
         name:"Amdadul",
-        skills:["HTML","CSS"],
+        skills:["HTML","CSS",],
         computer:{
             name:"ASSUS",
             model:"420",
@@ -64,7 +64,8 @@
             import:true
         }
     }
-    
+
+    console.log(richDeveloper);
 
 
 
