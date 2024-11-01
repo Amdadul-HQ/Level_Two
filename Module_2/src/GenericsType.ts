@@ -38,5 +38,18 @@
         }
     ]
 
+    // Generic Tuple
+    type GenericTuple<X,Y> = [X,Y]
+    interface Object {
+        name:string,
+        id:number
+    }  
+    const userWithId : GenericTuple<number,Object> = [123,{name:"Amdadul",id:123}]
+
+    
+
+
+
+
 
 }
