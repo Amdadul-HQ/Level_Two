@@ -10,6 +10,20 @@
  
  anyThing
 
+ const kgToGram = (value : string | number) : string | number | undefined => {
+    if(typeof value === "string"){
+        return `The convert Value: ${parseFloat(value)*1000}`
+    }
+    if(typeof value === "number"){
+        return value * 1000
+    }
+    return undefined;
+ }
+
+ const result = kgToGram(1000) as number
+
+ const result1 = kgToGram("1100") as string
+ 
 
 
 }
