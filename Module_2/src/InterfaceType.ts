@@ -52,7 +52,19 @@
         //         ^
         //This Number is for Index
     }
+
+    // Alias type Function
+    type Add = (num1:number,num2 :number) => number
     
+    const add1 :Add =(num1,num2) => num1 + num2;
 
+    // interface type function 
 
+    interface Add1 {
+        (num1:number,num2:number):number
+    }
+
+    const add2  : Add1 = (num1,num2) => num1 + num2
+
+    add2(2,2)
 }
