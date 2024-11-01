@@ -23,7 +23,16 @@
  const result = kgToGram(1000) as number
 
  const result1 = kgToGram("1100") as string
- 
 
+
+ type CustomeError = {
+    message: string
+ }
+
+ try {
+    
+ } catch (error) {
+        console.log((error as CustomeError).message)
+ }
 
 }
