@@ -22,5 +22,8 @@ type Require = Required<Person>
 
 
 // partial
+type Partion = Partial<Person>
+
+
 
 }
