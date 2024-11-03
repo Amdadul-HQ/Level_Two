@@ -25,5 +25,17 @@ type Require = Required<Person>
 type Partion = Partial<Person>
 
 
+// Read Only
+type ReadOnlyType = Readonly<Person>
+
+// Reacord 
+
+// type MyObj = Reacord<string,string>
+
+// const myObj :MyObj = {
+//     name: "afas",
+
+// }
+
 
 }
