@@ -18,7 +18,7 @@
 
     const reverse :FunctionType = (str) =>  str.split("").reverse().join("")
 
-    console.log(reverse("rimon"));
+    console.log(reverse("Saif"));
 
 
 

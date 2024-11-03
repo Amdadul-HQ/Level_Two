@@ -15,13 +15,13 @@
     interface User {
         name:string,
         age:number,
-        role?:"admin" | "user" | "gust",
+        role:"admin",
     }
 
     type IFunction = (param:User) => Array<User>
 
 
-    const user  = {
+    const user = {
         name:"Amdadul",
         age:21,
         role: "admin"
@@ -31,7 +31,7 @@
         (param :User) : User[]
     }
 
-    const userFunction: IFunctionType = (param) => [param]
+    const userFunction: IFunction = (param) => [param]
 
     console.log(userFunction(user));
 
