@@ -42,6 +42,8 @@
         return animal instanceof Cat;
     }
 
+
+
     const getAnimal = (animal: Animal) => {
         if(isAnimalDog(animal)){
             animal.makeBark()
