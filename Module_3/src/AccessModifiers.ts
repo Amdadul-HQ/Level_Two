@@ -2,9 +2,9 @@
 
     
 class BankAccount{
-    id:string;
+    readonly id:string; //Read Only
     name:string;
-    balance:number;
+    private balance:number;
     constructor(id:string,name:string,balance:number){
         this.balance=balance
         this.id=id
@@ -13,6 +13,7 @@ class BankAccount{
 }
 
 const goribErAccount = new BankAccount("2222222","Amdadul",100)
+
 
 
 
