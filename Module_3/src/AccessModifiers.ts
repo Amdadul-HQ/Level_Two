@@ -4,7 +4,7 @@
 class BankAccount{
     readonly id:string; //Read Only
     name:string;
-    private balance:number;
+    private balance:number;//Private property
     constructor(id:string,name:string,balance:number){
         this.balance=balance
         this.id=id
