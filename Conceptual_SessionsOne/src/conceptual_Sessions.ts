@@ -70,4 +70,15 @@ const message = isAdmin ? "Welcome Admin" : "Welcome USer"
 
 
 
+const data = {
+    name:"Rimon",
+    address: "Ctg"
+}
+
+
+// type assertion
+// If i know type script better then type script;
+
+
+
 }
