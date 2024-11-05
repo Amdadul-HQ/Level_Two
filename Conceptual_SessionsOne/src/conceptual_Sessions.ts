@@ -56,12 +56,17 @@ const person1 :Person = {
     age:21,
     isActive:true,
     company:"Monster studio",
-    designation:"Front End Developer"
+    designation:"Front End Developer",
+    salary:10
 }
 
 // Rest Operator
 const[first,...bakiEmement] = rolls;
 
+
+// ternary optional Chaining
+const isAdmin = false;
+const message = isAdmin ? "Welcome Admin" : "Welcome USer"
 
 
 
