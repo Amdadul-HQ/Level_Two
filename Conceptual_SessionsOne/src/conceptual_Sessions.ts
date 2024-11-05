@@ -66,7 +66,7 @@ const[first,...bakiEmement] = rolls;
 
 // ternary optional Chaining
 const isAdmin = false;
-const message = isAdmin ? "Welcome Admin" : "Welcome USer"
+// const message = isAdmin ? "Welcome Admin" : "Welcome USer"
 
 
 
@@ -78,6 +78,9 @@ const data = {
 
 // type assertion
 // If i know type script better then type script;
+
+const messageLength :unknown = '12334';
+const message = (messageLength as string).length;
 
 
 
