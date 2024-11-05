@@ -41,4 +41,12 @@ interface Multiply {
 const multiply:Multiply = (num1,num2) => num1 * num2
 
 
+// Spread Operator
+
+const rolls :number[] = [1,2,3,4,5,6,7,8,9,10]
+
+const newRolls :number[] = [...rolls,11,12]
+
+
+
 }
