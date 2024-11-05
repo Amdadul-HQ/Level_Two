@@ -29,5 +29,8 @@ const person : Person = {
     company:"Programming hero"
 }
 
+// Normal function & arrow function
+
+
 
 }
