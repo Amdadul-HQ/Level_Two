@@ -18,7 +18,8 @@ interface Person {
     age:number,
     isActive:boolean,
     designation:string,
-    company:string
+    company:string,
+    salary?:number // Optional Type
 }
 
 const person : Person = {
@@ -46,6 +47,21 @@ const multiply:Multiply = (num1,num2) => num1 * num2
 const rolls :number[] = [1,2,3,4,5,6,7,8,9,10]
 
 const newRolls :number[] = [...rolls,11,12]
+
+
+// Optional Type
+
+const person1 :Person = {
+    name:"Amdadul",
+    age:21,
+    isActive:true,
+    company:"Monster studio",
+    designation:"Front End Developer"
+}
+
+// Rest Operator
+const[first,...bakiEmement] = rolls;
+
 
 
 
