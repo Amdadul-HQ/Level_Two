@@ -82,6 +82,6 @@ const data = {
 const messageLength :unknown = '12334';
 const message = (messageLength as string).length;
 
-
+const person ={name:"amdadul"}
 
 }
